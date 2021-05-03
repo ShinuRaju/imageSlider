@@ -1,0 +1,38 @@
+.container{
+    max-width: 500px;
+    min-height: 500px;
+    background-image: url(https://picsum.photos/id/1/400/400);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container > input{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+ h1{
+    
+    text-align: center;
+}
+
+.container>input:first-of-type{
+    
+    left: 0;
+}
+
+.container>input:last-child{
+    
+    right: 0;
+}
+
+@media  (max-width: 500px){
+   .container{
+    min-height: 100vh;
+   }
+}
+
